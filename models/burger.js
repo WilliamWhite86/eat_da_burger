@@ -1,9 +1,27 @@
 var orm = require("../config/orm")
 
-orm.SelectAll()
+var burger = {
 
-orm.SelectOne()
+    SelectAll: function (cb) {
+        orm.SelectAll("burgers", function (res) {
+            cb(res)
+        })
+    },
 
-orm.UpdateOne()
+    InsertOne: function (cb) {
+        orm.InsertOne("burgers", cols, vals, function (res) {
+            cb(res)
+        })
+    },
+
+    UpdateOne: function (cb) {
+        orm.UpdateOne(objColVals, condition, function (res) {
+            cb(res)
+        })
+    }
+
+}
+
+
 
 module.exports = burger
