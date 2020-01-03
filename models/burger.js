@@ -1,4 +1,4 @@
-var orm = require("../config/orm")
+var orm = require("../config/orm.js")
 
 var burger = {
 
@@ -8,14 +8,14 @@ var burger = {
         })
     },
 
-    InsertOne: function (cb) {
+    InsertOne: function (cols, vals, cb) {
         orm.InsertOne("burgers", cols, vals, function (res) {
             cb(res)
         })
     },
 
-    UpdateOne: function (cb) {
-        orm.UpdateOne(objColVals, condition, function (res) {
+    UpdateOne: function (objColVals, condition, cb) {
+        orm.UpdateOne("burgers", objColVals, condition, function (res) {
             cb(res)
         })
     }
