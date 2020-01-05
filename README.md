@@ -3,7 +3,7 @@
 *Eat_da_Burger is a restaurant app that lets users input the names of burgers they'd like to eat. Uses MySQL, Node, Express, Handlebars and a homemade ORM.*
 
 * Credit goes to Cats app in-class activity from UNH Coding Bootcamp - I relied heavily on the Cats app example when building this.
-* Thank you to my TA and Teacher
+* Thank you to my TA and Teacher - they continue to help me a ton whenever I'm in a bind.
     * [Kyle Whittimore](https://github.com/kylewhittemore)
     * [David Allen](https://github.com/doctorallen)
 
